@@ -1,0 +1,7 @@
+C:\Users\srira\OneDrive\Desktop\Locobuzz_Training.Net\Collection\bin\Debug\Collection.exe.config
+C:\Users\srira\OneDrive\Desktop\Locobuzz_Training.Net\Collection\bin\Debug\Collection.exe
+C:\Users\srira\OneDrive\Desktop\Locobuzz_Training.Net\Collection\bin\Debug\Collection.pdb
+C:\Users\srira\OneDrive\Desktop\Locobuzz_Training.Net\Collection\obj\Debug\Collection.csproj.AssemblyReference.cache
+C:\Users\srira\OneDrive\Desktop\Locobuzz_Training.Net\Collection\obj\Debug\Collection.csproj.CoreCompileInputs.cache
+C:\Users\srira\OneDrive\Desktop\Locobuzz_Training.Net\Collection\obj\Debug\Collection.exe
+C:\Users\srira\OneDrive\Desktop\Locobuzz_Training.Net\Collection\obj\Debug\Collection.pdb
