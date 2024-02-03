@@ -10,6 +10,7 @@ namespace Collection
     {
         static void Main(string[] args)
         {
+            
             List<int> l1 = new List<int>();
             l1.Add(1);
             l1.Add(2);
@@ -25,6 +26,11 @@ namespace Collection
             Console.WriteLine(l1.Count());
             Console.WriteLine(l1.Contains(2));
             Console.WriteLine(l1.Capacity);
+            l1.Clear();
+            for(int i=0;i< l1.Count;i++)
+            {
+                Console.WriteLine(l1[i]);
+            }
         }
 
     }
