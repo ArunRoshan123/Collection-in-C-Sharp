@@ -11,43 +11,21 @@ namespace Collection
     {
         static void Main(string[] args)
         {
-            Stack s1 = new Stack();
-            Stack <int> s2= new Stack<int>();
-
-            // using non-genric method
-            s1.Push(1);
-            s1.Push(2);
-            s1.Push(3);
-            s1.Push(4);
-            s1.Push(5);
-            
-            // using genric method
-            s2.Push(1);
-            s2.Push(2);
-            s2.Push(3);
-            s2.Push(4);
-            s2.Push(5);
-
-            s1.Push("Arun");
-            s1.Push("Roshan");
-            s1.Push("A R");
-            foreach(object o in s1)
+            int[] arr = { 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140 ,150 };
+            int find = 1000;
+            for (int i = 0; i < arr.Length; i++)
             {
-                Console.WriteLine(o);
-            }
-            s1.Pop();
-            Console.WriteLine("The top element is");
-            Console.WriteLine(s1.Peek());
-            Console.WriteLine("Number of elements: " + s1.Count );
-            s1.Clear();
-            
-            Console.WriteLine();
-            Console.WriteLine("Generic Method");
-            foreach(object o1 in s2)
-            {
-                Console.WriteLine(o1);
+                if (find == arr[i])
+                {
+                    Console.WriteLine("Element present");
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Element not present");
+                    break;
+                }
             }
         }
-
     }
 }
