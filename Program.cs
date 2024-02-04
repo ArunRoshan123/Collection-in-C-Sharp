@@ -11,21 +11,45 @@ namespace Collection
     {
         static void Main(string[] args)
         {
-            int[] arr = { 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140 ,150 };
-            int find = 1000;
-            for (int i = 0; i < arr.Length; i++)
+            Dictionary<string, int> dick = new Dictionary<string, int>()
             {
-                if (find == arr[i])
-                {
-                    Console.WriteLine("Element present");
-                    break;
-                }
-                else
-                {
-                    Console.WriteLine("Element not present");
-                    break;
-                }
+                {"Apple", 1},
+                { "Orange", 2}
+            };
+            dick.Add("Arun", 100);
+            dick.Add("Roshan", 101);
+            dick.Add("AR", 102);
+            dick.Add("Dhanush", 103);
+
+            int value;
+            if (dick.TryGetValue("AR", out value))
+            {
+                Console.WriteLine(value);
             }
+            else
+            {
+                Console.WriteLine("Key not found.");
+            }
+
+            int value1 = dick["Arun"];
+            int value2 = dick["Roshan"];
+
+            foreach (KeyValuePair<string, int> p in dick)
+            {
+                Console.WriteLine("Name is {0} with Score {1}", p.Key, p.Value);
+            }
+
+            if (dick.ContainsValue(100))
+            {
+                Console.WriteLine("Key found");
+            }
+            else
+            {
+                Console.WriteLine("Key not found");
+            }
+            Console.WriteLine(dick.Count());
+            Console.WriteLine(value1);
+            Console.ReadLine();
         }
     }
 }
