@@ -11,27 +11,19 @@ namespace Collection
     {
         static void Main(string[] args)
         {
-            LinkedList<string> l1 = new LinkedList<string>();
+            Dictionary<string,string> l1 = new Dictionary<string,string>();
             
-            l1.AddLast("Arun");
-            l1.AddLast("Dhanush");
-            l1.AddLast("Sunil");
-            l1.AddLast("Mani");
+            l1.Add("1","Arun");
+            l1.Add("2","Dhanush");
+            l1.Add("3","Sunil");
+            l1.Add("4","Mani");
+            l1.Add("5","Prince");        
+            
+            l1.Remove("4");
 
-            l1.AddFirst("Prince");
-
-            LinkedListNode<string> node = l1.Find("Arun");
-
-            l1.AddBefore(node, "A R");
-            l1.AddAfter(node, "Roshan");
-
-            l1.RemoveLast();
-            l1.RemoveFirst();
-            l1.Remove("Roshan");
-
-            foreach(string s in l1)
+            foreach(KeyValuePair<string,string> s in l1)
             {
-                Console.WriteLine(s);
+                Console.WriteLine(s.Key+ " "+s.Value);
             }
         }
     }
