@@ -11,7 +11,7 @@ namespace Collection
     {
         static void Main(string[] args)
         {
-            SortedDictionary<string,string> l1 = new SortedDictionary<string,string>();
+            SortedList<string,string> l1 = new SortedList<string,string>();
             
             l1.Add("1","Arun");
             l1.Add("5","Prince");        
