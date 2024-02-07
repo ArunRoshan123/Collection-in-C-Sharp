@@ -11,45 +11,18 @@ namespace Collection
     {
         static void Main(string[] args)
         {
-            Dictionary<string, int> dick = new Dictionary<string, int>()
-            {
-                {"Apple", 1},
-                { "Orange", 2}
-            };
-            dick.Add("Arun", 100);
-            dick.Add("Roshan", 101);
-            dick.Add("AR", 102);
-            dick.Add("Dhanush", 103);
+            var names = new HashSet<string>() { "ARUN", "DHANUSH", "SUNIL", "MANI", "ARUN"};
 
-            int value;
-            if (dick.TryGetValue("AR", out value))
+            names.Add("Arun");
+            names.Add("Dhanush");
+            names.Add("Sunil");
+            names.Add("Mani");
+            names.Add("Mani");
+            names.Remove("Mani");
+            foreach(var name in names)
             {
-                Console.WriteLine(value);
+                Console.WriteLine(name);    
             }
-            else
-            {
-                Console.WriteLine("Key not found.");
-            }
-
-            int value1 = dick["Arun"];
-            int value2 = dick["Roshan"];
-
-            foreach (KeyValuePair<string, int> p in dick)
-            {
-                Console.WriteLine("Name is {0} with Score {1}", p.Key, p.Value);
-            }
-
-            if (dick.ContainsValue(100))
-            {
-                Console.WriteLine("Key found");
-            }
-            else
-            {
-                Console.WriteLine("Key not found");
-            }
-            Console.WriteLine(dick.Count());
-            Console.WriteLine(value1);
-            Console.ReadLine();
         }
     }
 }
