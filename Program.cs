@@ -11,16 +11,27 @@ namespace Collection
     {
         static void Main(string[] args)
         {
-            var names = new SortedSet<string>() { "ARUN", "DHANUSH", "SUNIL", "MANI", "ARUN"};
+            LinkedList<string> l1 = new LinkedList<string>();
+            
+            l1.AddLast("Arun");
+            l1.AddLast("Dhanush");
+            l1.AddLast("Sunil");
+            l1.AddLast("Mani");
 
-            names.Add("Arun");
-            names.Add("Dhanush");
-            names.Add("Sunil");
-            names.Add("Mani");
-            names.Remove("Mani");
-            foreach(var name in names)
+            l1.AddFirst("Prince");
+
+            LinkedListNode<string> node = l1.Find("Arun");
+
+            l1.AddBefore(node, "A R");
+            l1.AddAfter(node, "Roshan");
+
+            l1.RemoveLast();
+            l1.RemoveFirst();
+            l1.Remove("Roshan");
+
+            foreach(string s in l1)
             {
-                Console.WriteLine(name);    
+                Console.WriteLine(s);
             }
         }
     }
