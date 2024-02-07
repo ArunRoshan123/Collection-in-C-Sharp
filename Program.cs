@@ -11,13 +11,13 @@ namespace Collection
     {
         static void Main(string[] args)
         {
-            Dictionary<string,string> l1 = new Dictionary<string,string>();
+            SortedDictionary<string,string> l1 = new SortedDictionary<string,string>();
             
             l1.Add("1","Arun");
-            l1.Add("2","Dhanush");
-            l1.Add("3","Sunil");
-            l1.Add("4","Mani");
             l1.Add("5","Prince");        
+            l1.Add("3","Sunil");
+            l1.Add("2","Dhanush");
+            l1.Add("4","Mani");
             
             l1.Remove("4");
 
