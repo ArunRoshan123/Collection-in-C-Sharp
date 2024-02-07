@@ -11,12 +11,11 @@ namespace Collection
     {
         static void Main(string[] args)
         {
-            var names = new HashSet<string>() { "ARUN", "DHANUSH", "SUNIL", "MANI", "ARUN"};
+            var names = new SortedSet<string>() { "ARUN", "DHANUSH", "SUNIL", "MANI", "ARUN"};
 
             names.Add("Arun");
             names.Add("Dhanush");
             names.Add("Sunil");
-            names.Add("Mani");
             names.Add("Mani");
             names.Remove("Mani");
             foreach(var name in names)
